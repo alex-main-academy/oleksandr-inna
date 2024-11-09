@@ -31,7 +31,7 @@
             <section class="entry">
                 <div class="container">
                     <div class="entry__venzel">
-                        <img src="img/venzel2.png" alt="Александр & Инна" class="entry__venzel-image" width="150">
+                        <img src="img/venzel.png" alt="Александр & Инна" class="entry__venzel-image" width="150">
                         <span class="entry__venzel-letters">A & I</span>
                     </div>
                     <p class="entry__verse">
@@ -42,6 +42,116 @@
                         С великой радостью приглашаем вас разделить с нами особенный день, когда мы перед Богом и нашими
                         близкими соеденим свои сердца и судьбы!
                     </p>
+                </div>
+                <p class="entry__date">
+                    15.12.2024
+                    <img src="img/line.png" alt="Александр & Инна" width="480" class="entry__date-line">
+                </p>
+            </section>
+
+            <section class="timing">
+                <div class="container">
+                    <h2 class="timing__title title">
+                        Тайминг дня
+                    </h2>
+                    <ul class="timing__list">
+                        <li class="timing__item">
+                            <span class="timing__time">10:00</span>
+                            <p class="timing__event">Сочетание</p>
+                        </li>
+                        <li class="timing__item">
+                            <span class="timing__time">12:30</span>
+                            <p class="timing__event">Пир 1 часть</p>
+                        </li>
+                        <li class="timing__item">
+                            <span class="timing__time">15:00</span>
+                            <p class="timing__event">Перерыв</p>
+                        </li>
+                        <li class="timing__item">
+                            <span class="timing__time">16:30</span>
+                            <p class="timing__event">Пир 2 часть</p>
+                        </li>
+                        <li class="timing__item">
+                            <span class="timing__time">19:00</span>
+                            <p class="timing__event">Конец</p>
+                        </li>
+                        <img src="img/first-line.png" alt="decoration" class="timing__line timing__line-first">
+                        <img src="img/second-line.png" alt="decoration" class="timing__line timing__line-second">
+                        <img src="img/third-line.png" alt="decoration" class="timing__line timing__line-third">
+                        <img src="img/fourth-line.png" alt="decoration" class="timing__line timing__line-fourth">
+                    </ul>
+                </div>
+            </section>
+
+            <section class="photo">
+                <img src="img/photo.jpg" alt="Александр & Инна" width="480" class="photo__image">
+            </section>
+
+            <section class="dress">
+                <div class="container">
+                    <h2 class="dress__title title">
+                        Дресс-код
+                    </h2>
+                    <ul class="dress__list">
+                        <li class="dress__item dress__item-pink"></li>
+                        <li class="dress__item dress__item-green"></li>
+                        <li class="dress__item dress__item-white"></li>
+                    </ul>
+                </div>
+                <img src="img/line.png" alt="Александр & Инна" width="480" class="entry__date-line">
+            </section>
+
+            <section class="location">
+                <div class="container">
+                    <h2 class="location__title title">
+                        Локация
+                    </h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19881.650425082276!2d8.98523203476563!3d51.47272740000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bb0830307d936b%3A0xa64830711f4f5394!2zV2FsbWUgMS0zLCAzNDQ3NCBEaWVtZWxzdGFkdCwg0JPQtdGA0LzQsNC90LjRjw!5e0!3m2!1sru!2sua!4v1731161682833!5m2!1sru!2sua"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/qWXbMg8ysS974i9V7?g_st=it" class="location__link">
+                        Открыть карту
+                    </a>
+                </div>
+            </section>
+
+            <section class="gift">
+                <div class="container">
+                    <h2 class="gift__title title">
+                        Пожелания по подаркам
+                    </h2>
+                    <img src="img/letter.jpg" alt="gift" class="gift__image" width="150">
+                </div>
+            </section>
+
+            <section class="order">
+                <img src="img/line.png" alt="Александр & Инна" width="480" class="entry__date-line">
+                <div class="container">
+                    <h2 class="order__title title">
+                        Заявка
+                    </h2>
+                    <p class="order__desc">
+                        Подтвердите, пожалуйста, <br> свое участие в торжестве
+                    </p>
+                    <form class="order__form js-form">
+                        <input type="text" class="order__input" name="имя" minlength="2" required
+                            placeholder="Имя и Фамилия">
+                        <input type="number" class="order__input" name="количество" min="0" max="30" required
+                            placeholder="Количество людей">
+                        <div class="order__be">
+                            <label class="order__label">
+                                <input type="radio" class="order__radio" name="присутствие" id="true" value="да">
+                                <span>Я смогу прийти</span>
+                            </label>
+                            <label class="order__label">
+                                <input type="radio" class="order__radio" name="присутствие" id="false" value="нет">
+                                <span>Я не смогу прийти</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="дата" class="js-form-date">
+                        <button class="order__submit" type="submit">отправить</button>
+                    </form>
                 </div>
             </section>
         </main>

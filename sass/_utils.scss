@@ -17,3 +17,14 @@ body {
 .container {
     padding: 0 2rem;
 }
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.entry__date-line {
+    opacity: 0.2;
+}

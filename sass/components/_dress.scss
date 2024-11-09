@@ -1,0 +1,34 @@
+.dress {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.dress__title {
+    margin-bottom: 4rem;
+}
+
+.dress__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.dress__item {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    box-shadow: 0 0 .5rem .1rem #0000001c;
+
+    &-pink {
+        background-color: #dac7b8;
+    }
+
+    &-green {
+        background-color: #afb997;
+    }
+
+    &-white {
+        background-color: #ffffff;
+    }
+}

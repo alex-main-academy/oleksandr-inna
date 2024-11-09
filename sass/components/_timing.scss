@@ -1,0 +1,57 @@
+.timing {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+.timing__title {
+    margin-bottom: 5rem;
+}
+
+.timing__list {
+    position: relative;
+}
+
+.timing__item {
+    &:nth-child(2n) {
+        text-align: right;
+    }
+}
+
+.timing__time {
+    font-size: 7rem;
+    line-height: 1;
+}
+
+.timing__event {
+    font-size: 3.4rem;
+    letter-spacing: .2rem;
+}
+
+.timing__line {
+    position: absolute;
+    opacity: 0.5;
+
+    &-first {
+        top: 5rem;
+        right: 10rem;
+        width: 17rem;
+    }
+
+    &-second {
+        top: 15rem;
+        right: 16rem;
+        width: 13rem;
+    }
+
+    &-third {
+        bottom: 17rem;
+        right: 16rem;
+        width: 13rem;
+    }
+
+    &-fourth {
+        bottom: 3rem;
+        right: 10rem;
+        width: 17rem;
+    }
+}

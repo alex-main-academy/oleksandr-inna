@@ -21,7 +21,7 @@
 }
 
 .entry__verse {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     line-height: 1.4;
     font-style: italic;
@@ -30,12 +30,27 @@
 
     &-link {
         display: block;
+        font-size: 2rem;
     }
 }
 
 .entry__welcome {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     text-align: center;
     line-height: 1.4;
     font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.entry__date {
+    text-align: center;
+    line-height: 1;
+    font-size: 12rem;
+    font-weight: 300;
+    line-height: 1;
+    font-style: italic;
+
+    &-line {
+        margin-top: 2rem;
+    }
 }
