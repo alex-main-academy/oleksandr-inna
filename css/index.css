@@ -90,10 +90,14 @@ body {
   background-color: #f5f6f1;
   line-height: 1.2;
 }
+body.is-loader {
+  overflow: hidden;
+}
 
 .wrapper {
   max-width: 48rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container {
@@ -434,4 +438,133 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2rem;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  transition-duration: 300ms;
+  opacity: 0;
+  visibility: hidden;
+}
+.loader.is-loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.thanks {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.thanks__line {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  opacity: 0.1;
+}
+
+.thanks .container {
+  min-width: 100%;
+}
+
+.thanks__title {
+  font-size: 7rem;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.thanks__desc {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.thanks__logo {
+  margin: 2rem auto;
+}
+
+.thanks__link {
+  display: block;
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.8rem 0;
+  border-radius: 1rem;
+  background-color: #3d98ed;
+  color: #FFFFFF;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #b4b4b4;
+}
+
+.footer__link {
+  display: block;
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer .container {
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__name {
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.preloader::before, .preloader::after {
+  position: absolute;
+  width: 50.2%;
+  height: 100%;
+  background-color: #FFFFFF;
+  transition-duration: 500ms;
+}
+.preloader::before {
+  content: "";
+  top: 0;
+  left: 0;
+}
+.preloader::after {
+  content: "";
+  top: 0;
+  right: 0;
+}
+.preloader.active::before {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.preloader.active::after {
+  transform: translateX(100%);
+  opacity: 0;
 }/*# sourceMappingURL=index.css.map */

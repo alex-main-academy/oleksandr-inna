@@ -7,11 +7,16 @@ body {
     color: $color-primary;
     background-color: $bg-light;
     line-height: 1.2;
+
+    &.is-loader {
+        overflow: hidden;
+    }
 }
 
 .wrapper {
     max-width: 48rem;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {

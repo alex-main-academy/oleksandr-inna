@@ -1,0 +1,24 @@
+.footer {
+    background-color: #b4b4b4;
+}
+
+.footer__link {
+    display: block;
+    width: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer .container {
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__name {
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 1px solid #FFFFFF;
+}
