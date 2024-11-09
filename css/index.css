@@ -560,6 +560,9 @@ body.is-loader {
   top: 0;
   right: 0;
 }
+.preloader.active {
+  visibility: hidden;
+}
 .preloader.active::before {
   transform: translateX(-100%);
   opacity: 0;

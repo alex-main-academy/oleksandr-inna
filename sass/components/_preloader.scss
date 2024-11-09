@@ -27,6 +27,8 @@
     }
 
     &.active {
+        visibility: hidden;
+
         &::before {
             transform: translateX(-100%);
             opacity: 0;

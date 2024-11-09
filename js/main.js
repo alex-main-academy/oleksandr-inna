@@ -38,7 +38,5 @@ form.addEventListener("submit", (event) => {
 const preloader = document.querySelector(".js-preloader");
 
 window.onload = function () {
-    setTimeout(() => {
-        preloader.classList.add("active");
-    }, 1000);
+    preloader.classList.add("active");
 };
