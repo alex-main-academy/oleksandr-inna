@@ -28,8 +28,6 @@ form.addEventListener("submit", (event) => {
                 "https://alexandr-inna.vercel.app/thanks.html";
             console.log("Success!", response);
             document.body.classList.remove("is-loader");
-            loader.classList.remove("is-loader");
-            form.reset();
         })
         .catch((error) => {
             console.error("Error!", error.message);
